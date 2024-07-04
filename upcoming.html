@@ -117,19 +117,20 @@
 }
 
 /* Style the buttons */
-.btn {
+.btn2 {
   border: none;
   outline: none;
   padding: 12px 16px;
   background-color: #f1f1f1;
   cursor: pointer;
+  width: 23%;
 }
 
-.btn:hover {
+.btn2:hover {
   background-color: #ddd;
 }
 
-.btn.active {
+.btn2.active {
   background-color: #666;
   color: white;
 }
@@ -146,7 +147,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Upcoming_MUN.html">Upcoming MUNs</a>
@@ -173,15 +174,18 @@
     </nav>
   </header>
   <main>
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('online')"> Online</button>
-  <button class="btn" onclick="filterSelection('offline')"> Offline</button>
+<div id="myBtnContainer" style="
+    margin-top: 100px;
+    text-align: center;
+">
+  <button class="btn2 active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn2" onclick="filterSelection('online')"> Online</button>
+  <button class="btn2" onclick="filterSelection('offline')"> Offline</button>
 </div>
     <div class="album py-5 bg-body-tertiary">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="filterDiv col offline">
+          <div class="filterDiv col offline show">
             <div class="card">
               <img src="logos\verizon.jpg">
               <div class="card-body">
@@ -200,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="filterDiv col offline">
+          <div class="filterDiv col offline show">
             <div class="card">
               <img src="logos\risgn.jpg">
               <div class="card-body">
@@ -218,7 +222,7 @@
               </div>
             </div>
           </div>
-           <div class="filterDiv col online">
+           <div class="filterDiv col online show">
             <div class="card">
               <img src="logos\novices.jpeg">
               <div class="card-body">
@@ -316,6 +320,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
 
 
 
