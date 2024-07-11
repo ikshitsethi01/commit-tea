@@ -117,7 +117,7 @@
   padding: 12px 16px;
   background-color: #f1f1f1;
   cursor: pointer;
-  width: 23%;
+  width: 18%;
 }
 
 .btn2:hover {
@@ -175,7 +175,7 @@
   <button class="btn2 active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn2" onclick="filterSelection('online')"> Online</button>
   <button class="btn2" onclick="filterSelection('offline')"> Offline</button>
-</div>
+<button class="btn2" onclick="filterSelection('archived')">Archived</button></div>
     <div class="album py-5 bg-body-tertiary">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -216,7 +216,7 @@
               </div>
             </div>
           </div>
-           <div class="filterDiv col online show">
+           <div class="filterDiv col archived show">
             <div class="card">
               <img src="logos\novices.jpeg">
               <div class="card-body">
@@ -314,6 +314,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+
 
 
 
