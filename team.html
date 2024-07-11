@@ -6,6 +6,74 @@
 
   
   <style>
+            html {
+      box-sizing: border-box;
+      background-color: #1E0D01;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .row{
+      margin: 60px;
+    }
+    
+    .column {
+      float: left;
+      width: 25%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+      .row{
+        margin: 0px;
+      }
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      color: aliceblue;
+      background-color: #1E0D01;
+      border: 2px solid aliceblue;
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+      font-size: 1.3em;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #7e361c;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+    
     body {
       padding-top: 3rem;
       padding-bottom: 3rem;
@@ -103,73 +171,7 @@
       background-color: #5b2615;
     }
 
-        html {
-      box-sizing: border-box;
-      background-color: #1E0D01;
-    }
-    
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-    
-    .row{
-      margin: 60px;
-    }
-    
-    .column {
-      float: left;
-      width: 33.3%;
-      margin-bottom: 16px;
-      padding: 0 8px;
-    }
-    
-    @media screen and (max-width: 650px) {
-      .column {
-        width: 100%;
-        display: block;
-      }
-      .row{
-        margin: 0px;
-      }
-    }
-    
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      color: aliceblue;
-      background-color: #1E0D01;
-      border: 2px solid aliceblue;
-    }
-    
-    .container {
-      padding: 0 16px;
-    }
-    
-    .container::after, .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    
-    .title {
-      color: grey;
-      font-size: 1.3em;
-    }
-    
-    .button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 8px;
-      color: white;
-      background-color: #7e361c;
-      text-align: center;
-      cursor: pointer;
-      width: 100%;
-    }
-    
-    .button:hover {
-      background-color: #555;
-    }
+
     
   </style>
 </head>
